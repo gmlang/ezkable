@@ -1,0 +1,22 @@
+Package: ezkable
+Title: Easily display large tables in pdf documents produced by R markdown
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Guangming",
+           family = "Lang",
+           role = c("aut", "cre"),
+           email = "gmlang@cabaceo.com")
+Description: It's difficult to show a large (long or wide) table properly in a 
+pdf document produced by R markdown. This package solves that problem by 
+combining functions from the `kableExtra` package with `knitr::kable()` and 
+setting default parameter values that work in most cases. The goal is to allow 
+users to quickly publish large tables with one function call without having to 
+write detailed code to configure the tables. 
+License: `use_mit_license()`
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    dplyr,
+    knitr
