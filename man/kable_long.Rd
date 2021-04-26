@@ -19,8 +19,8 @@ markdown/tex code block for a table that can be rendered inside a R
 markdown file when outputting a pdf document.
 }
 \description{
-This function works great if you need to display a long table that can't be
-fit on one page. It builds on top of \code{kable_default()}.
+This function works great if you need to display a long table that expands
+across multiple pages. It builds on top of \code{kable_default()}.
 }
 \examples{
 inst/examples/ex-kable_long.R

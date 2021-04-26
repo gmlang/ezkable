@@ -17,9 +17,8 @@ markdown/tex code block for a table that can be render inside a R
 markdown file when outputting a pdf document.
 }
 \description{
-This function displays the given table at the exact position on the pdf page
-where the table is inserted. It calls \code{knitr::kable()} under the hood, with
-\code{booktabs=TRUE} and \code{format='latex'}.
+This function calls \code{knitr::kable()} under the hood, with \code{booktabs=TRUE} and
+\code{format='latex'}.
 }
 \examples{
 inst/examples/ex-kable_default.R

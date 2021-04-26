@@ -14,5 +14,5 @@
 #'
 #' @export
 #' @examples inst/examples/ex-to_landscape.R
-to_landscape = function(tbl_code) tbl_code %>% kableExtra::landscape()
+to_landscape = function(tbl_code) tbl_code %>% kableExtra::landscape
 

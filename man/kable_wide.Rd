@@ -4,10 +4,13 @@
 \alias{kable_wide}
 \title{Display wide tables.}
 \usage{
-kable_wide(tbl, ...)
+kable_wide(tbl, font_size = "auto", ...)
 }
 \arguments{
 \item{tbl}{Data frame, the table to be displayed.}
+
+\item{font_size}{Number, font size of the table content. Default = 'auto',
+which will automatically pick a font size to fit the table on the page.}
 
 \item{...}{Other arguments for \code{kntr::kable()}, for example, digits = 2,
 caption = 'Table Caption', and etc.}
@@ -17,8 +20,8 @@ markdown/tex code block for a table that can be rendered inside a R
 markdown file when outputting a pdf document.
 }
 \description{
-This function works great if you need to display a wide table that can't be
-fit on one page. It builds on top of \code{kable_default()}.
+This function works great if you need to fit a wide table on one page. It
+builds on top of \code{kable_default()}.
 }
 \examples{
 inst/examples/ex-kable_wide.R
