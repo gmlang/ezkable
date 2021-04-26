@@ -14,7 +14,11 @@
 #' @export
 #' @examples inst/examples/ex-kable_default.R
 kable_default = function(tbl, ...) {
-        tbl %>% knitr::kable(format = "latex", booktabs = TRUE,
-                             label = runif(1, min = 1, max = 1000000), ...)
+        if ('label' %in% names(list(...))) {
+                tbl %>% knitr::kable(format = "latex", booktabs = TRUE, ...)
+        } else {
+                tbl %>% knitr::kable(format = "latex", booktabs = TRUE,
+                                     label = runif(1, min = 1, max = 1000000),
+                                     ...)
+        }
 }
-

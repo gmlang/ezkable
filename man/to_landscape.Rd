@@ -4,7 +4,7 @@
 \alias{to_landscape}
 \title{Change the table display to landscape.}
 \usage{
-to_landscape(tbl_code)
+to_landscape(tbl_code, margin = "1cm")
 }
 \arguments{
 \item{tbl_code}{markdown/tex code that describes the table to be displayed.
